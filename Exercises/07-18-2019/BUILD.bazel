@@ -1,0 +1,8 @@
+cc_test(
+	name="ex2_test",
+	srcs=["ex2_test.cpp", "ex2.cpp", "ex2.h"],
+	copts=["-Iexternal/gtest/include"],
+	deps=[
+		"@gtest//:main"
+	]
+)
